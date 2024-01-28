@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Gw0Hf+w+gKQsEx8BfpAE8yqt2xygVQw71gBxC7wwan0=",
+  "Source": "qodev_api_gateway",
+  "BasePath": "_content/qodev_api_gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,88 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1/init_content/enroll-cms",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5190
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/enroll-cms",
+      "UpstreamHttpMethod": ["Post"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/init_content/cms-list/{contentKey}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5190
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service?contentKey={contentKey}",
+      "UpstreamHttpMethod": ["Get"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/init_content/cms-filter-url-key/{contentKey}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5190
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/filter?contentKey={contentKey}",
+      "UpstreamHttpMethod": ["Get"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/init_content/cms-current-screen",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5190
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/current-screen",
+      "UpstreamHttpMethod": ["Get"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/init_content/cms-update-current-screen",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5190
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/update-current-screen",
+      "UpstreamHttpMethod": ["Post", "Put"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/init_content/cms-look-cms-paths",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5190
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/find-paths",
+      "UpstreamHttpMethod": ["Post"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/init_content/cms-page-not-found",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5190
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/page-not-found",
+      "UpstreamHttpMethod": ["Put"]
+    }
+  ]
+}
