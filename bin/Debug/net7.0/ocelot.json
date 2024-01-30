@@ -13,7 +13,7 @@
       "UpstreamHttpMethod": ["Post"]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/init_content/cms-list/{contentKey}",
+      "DownstreamPathTemplate": "/api/v1/init_content/cms-list",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -21,11 +21,11 @@
           "Port": 5190
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/gateway/cms-service?contentKey={contentKey}",
-      "UpstreamHttpMethod": ["Get"]
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/cms-list",
+      "UpstreamHttpMethod": ["Post"]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/init_content/cms-filter-url-key/{contentKey}",
+      "DownstreamPathTemplate": "/api/v1/init_content/cms-filter-url-key",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -33,8 +33,8 @@
           "Port": 5190
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/filter?contentKey={contentKey}",
-      "UpstreamHttpMethod": ["Get"]
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/filter",
+      "UpstreamHttpMethod": ["Post"]
     },
     {
       "DownstreamPathTemplate": "/api/v1/init_content/cms-current-screen",
