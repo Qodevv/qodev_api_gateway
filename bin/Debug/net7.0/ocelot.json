@@ -37,30 +37,6 @@
       "UpstreamHttpMethod": ["Post"]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/init_content/cms-current-screen",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5190
-        }
-      ],
-      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/current-screen",
-      "UpstreamHttpMethod": ["Get"]
-    },
-    {
-      "DownstreamPathTemplate": "/api/v1/init_content/cms-update-current-screen",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5190
-        }
-      ],
-      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/update-current-screen",
-      "UpstreamHttpMethod": ["Post", "Put"]
-    },
-    {
       "DownstreamPathTemplate": "/api/v1/init_content/cms-look-cms-paths",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -73,7 +49,7 @@
       "UpstreamHttpMethod": ["Post"]
     },
     {
-      "DownstreamPathTemplate": "/api/v1/init_content/cms-page-not-found",
+      "DownstreamPathTemplate": "/api/v1/init_content/cms-initialization",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -81,8 +57,8 @@
           "Port": 5190
         }
       ],
-      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/page-not-found",
-      "UpstreamHttpMethod": ["Put"]
+      "UpstreamPathTemplate": "/api/v1/gateway/cms-service/cms-init-enrollment",
+      "UpstreamHttpMethod": ["Post"]
     }
   ]
 }
