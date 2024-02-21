@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\qodev_backend\\qodev_api_gateway\\qodev_api_gateway.csproj": {}
+    "C:\\Users\\devop\\source\\repos\\QDVMicroservices\\qodev_api_gateway\\qodev_api_gateway.csproj": {}
   },
   "projects": {
-    "D:\\qodev_backend\\qodev_api_gateway\\qodev_api_gateway.csproj": {
+    "C:\\Users\\devop\\source\\repos\\QDVMicroservices\\qodev_api_gateway\\qodev_api_gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\qodev_backend\\qodev_api_gateway\\qodev_api_gateway.csproj",
+        "projectUniqueName": "C:\\Users\\devop\\source\\repos\\QDVMicroservices\\qodev_api_gateway\\qodev_api_gateway.csproj",
         "projectName": "qodev_api_gateway",
-        "projectPath": "D:\\qodev_backend\\qodev_api_gateway\\qodev_api_gateway.csproj",
-        "packagesPath": "C:\\Users\\JM Sevilla\\.nuget\\packages\\",
-        "outputPath": "D:\\qodev_backend\\qodev_api_gateway\\obj\\",
+        "projectPath": "C:\\Users\\devop\\source\\repos\\QDVMicroservices\\qodev_api_gateway\\qodev_api_gateway.csproj",
+        "packagesPath": "C:\\Users\\devop\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\devop\\source\\repos\\QDVMicroservices\\qodev_api_gateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\JM Sevilla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\devop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -34,11 +34,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Ocelot": {
               "target": "Package",
@@ -64,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
